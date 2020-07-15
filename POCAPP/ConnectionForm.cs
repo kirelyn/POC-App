@@ -32,6 +32,17 @@ namespace POCAPP
             MySqlConnection con;
             connectionString = "server=localhost;database=databasename;uid=username;pwd=password;";
             con = new MySqlConnection(connectionString);
+
+            try
+            {
+                con.Open();
+                MessageBox.Show("Connection successful!");
+                con.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Connection Failed");
+            }
         }
 
 
