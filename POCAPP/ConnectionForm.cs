@@ -31,7 +31,7 @@ namespace POCAPP
         {
             
             //int id = 10;
-            string connectionString = "server=localhost;database=mydatabase;uid=;pwd=;";
+            string connectionString = "server=localhost;database=pocapp;uid=;pwd=;";
             MySqlConnection con = new MySqlConnection(connectionString); 
 
             try
@@ -41,7 +41,6 @@ namespace POCAPP
                 this.Hide();
                 Form Form2 = new XEnterId(con);
                 Form2.ShowDialog();
-                this.Close();
                 this.Close();
             }
             catch
