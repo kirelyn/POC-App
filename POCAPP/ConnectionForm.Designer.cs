@@ -62,7 +62,7 @@
             this.Controls.Add(this.XConnectButton);
             this.Name = "ConnectionForm";
             this.Text = "POC COVID Connect";
-            this.Load += new System.EventHandler(this.ConnectionForm_Load);
+            //this.Load += new System.EventHandler(this.ConnectionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
