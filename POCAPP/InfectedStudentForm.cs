@@ -44,7 +44,7 @@ namespace POCAPP
         { 
             int id = Int32.Parse(xStudentIdText.Text);
 
-            string connectionString = "server=localhost;database=mydatabase;uid=johnny;pwd=W!ldfire24$;";
+            string connectionString = "server=localhost;database=mydatabase;uid=;pwd=;";
             //MySqlConnection con = new MySqlConnection(connectionString);
             // carrying over connection from the first form to avoid having two different opens. -- Johnny
             try

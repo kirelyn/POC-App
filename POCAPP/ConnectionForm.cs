@@ -31,7 +31,7 @@ namespace POCAPP
         {
             
             //int id = 10;
-            string connectionString = "server=localhost;database=mydatabase;uid=johnny;pwd=W!ldfire24$;";
+            string connectionString = "server=localhost;database=mydatabase;uid=;pwd=;";
             MySqlConnection con = new MySqlConnection(connectionString); 
 
             try
