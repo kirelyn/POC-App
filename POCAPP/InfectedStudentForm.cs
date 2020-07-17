@@ -35,12 +35,12 @@ namespace POCAPP
 
         }
 
-        string myConnectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
+        string myConnectionString = "server=localhost;database=pocapp;uid=;pwd=.;";
         private void button1_Click(object sender, EventArgs e)
         {
             
             int id = Int32.Parse(xStudentIdText.Text);
-            string connectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
+            string connectionString = "server=localhost;database=pocapp;uid=;pwd=;";
             MySqlConnection con = new MySqlConnection(connectionString);
 
             try

@@ -26,12 +26,12 @@ namespace POCAPP
         
 
         //This is how the windows forms will be connected to the database. The connection will have to be personalized.
-        string myConnectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
+        string myConnectionString = "server=localhost;database=pocapp;uid=;pwd=;";
         public void button1_Click(object sender, EventArgs e)
         {
             
             //int id = 10;
-            string connectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
+            string connectionString = "server=localhost;database=pocapp;uid=;pwd=.;";
             MySqlConnection con = new MySqlConnection(connectionString); 
 
             try
