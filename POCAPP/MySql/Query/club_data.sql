@@ -1,0 +1,2 @@
+INSERT INTO pocapp.club 
+VALUES (1000,10,10),(1001,11,11);

@@ -1,0 +1,2 @@
+INSERT INTO pocapp.class 
+VALUES (400,100),(410,100),(600,101),(601,101);
