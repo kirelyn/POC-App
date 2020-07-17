@@ -35,6 +35,7 @@
             this.TBStudentID = new System.Windows.Forms.TextBox();
             this.btnIdEnter = new System.Windows.Forms.Button();
             this.DGVDataTable = new System.Windows.Forms.DataGridView();
+            this.listView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVDataTable)).BeginInit();
             this.SuspendLayout();
@@ -93,18 +94,28 @@
             this.DGVDataTable.Size = new System.Drawing.Size(817, 380);
             this.DGVDataTable.TabIndex = 6;
             // 
+            // listView
+            // 
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(25, 184);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(784, 350);
+            this.listView.TabIndex = 7;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 561);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.DGVDataTable);
             this.Controls.Add(this.btnIdEnter);
             this.Controls.Add(this.TBStudentID);
             this.Controls.Add(this.lblStudentID);
             this.Controls.Add(this.lblUniv);
             this.Controls.Add(this.pbLogo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
@@ -122,5 +133,6 @@
         private System.Windows.Forms.TextBox TBStudentID;
         private System.Windows.Forms.Button btnIdEnter;
         private System.Windows.Forms.DataGridView DGVDataTable;
+        private System.Windows.Forms.ListView listView;
     }
 }
