@@ -26,12 +26,15 @@ namespace POCAPP
         
 
         //This is how the windows forms will be connected to the database. The connection will have to be personalized.
-        string myConnectionString = "server=localhost;database=pocapp;uid=;pwd=;";
+
+        string myConnectionString = "server=localhost;database=;uid=;pwd=;";
         public void button1_Click(object sender, EventArgs e)
         {
             
             //int id = 10;
-            string connectionString = "server=localhost;database=pocapp;uid=;pwd=;";
+
+            string connectionString = "server=localhost;database=;uid=;pwd=;";
+
             MySqlConnection con = new MySqlConnection(connectionString); 
 
             try

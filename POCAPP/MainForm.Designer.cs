@@ -42,10 +42,9 @@
             // pbLogo
             // 
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(13, 13);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbLogo.Location = new System.Drawing.Point(10, 11);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(133, 123);
+            this.pbLogo.Size = new System.Drawing.Size(100, 100);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
@@ -53,62 +52,59 @@
             // lblUniv
             // 
             this.lblUniv.Font = new System.Drawing.Font("Century Schoolbook", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUniv.Location = new System.Drawing.Point(154, 13);
-            this.lblUniv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUniv.Location = new System.Drawing.Point(116, 11);
             this.lblUniv.Name = "lblUniv";
-            this.lblUniv.Size = new System.Drawing.Size(480, 123);
+            this.lblUniv.Size = new System.Drawing.Size(360, 100);
             this.lblUniv.TabIndex = 2;
             this.lblUniv.Text = "Langston University";
             // 
             // lblStudentID
             // 
             this.lblStudentID.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentID.Location = new System.Drawing.Point(259, 168);
-            this.lblStudentID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStudentID.Location = new System.Drawing.Point(194, 136);
             this.lblStudentID.Name = "lblStudentID";
-            this.lblStudentID.Size = new System.Drawing.Size(259, 33);
+            this.lblStudentID.Size = new System.Drawing.Size(194, 27);
             this.lblStudentID.TabIndex = 3;
             this.lblStudentID.Text = "Enter Student ID: ";
             // 
             // TBStudentID
             // 
-            this.TBStudentID.Location = new System.Drawing.Point(505, 175);
-            this.TBStudentID.Margin = new System.Windows.Forms.Padding(4);
+            this.TBStudentID.Location = new System.Drawing.Point(379, 142);
             this.TBStudentID.Name = "TBStudentID";
-            this.TBStudentID.Size = new System.Drawing.Size(256, 22);
+            this.TBStudentID.Size = new System.Drawing.Size(193, 20);
             this.TBStudentID.TabIndex = 4;
             // 
             // btnIdEnter
             // 
-            this.btnIdEnter.Location = new System.Drawing.Point(771, 172);
-            this.btnIdEnter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIdEnter.Location = new System.Drawing.Point(578, 140);
             this.btnIdEnter.Name = "btnIdEnter";
-            this.btnIdEnter.Size = new System.Drawing.Size(100, 28);
+            this.btnIdEnter.Size = new System.Drawing.Size(75, 23);
             this.btnIdEnter.TabIndex = 5;
             this.btnIdEnter.Text = "Enter";
             this.btnIdEnter.UseVisualStyleBackColor = true;
+            this.btnIdEnter.Click += new System.EventHandler(this.btnIdEnter_Click);
             // 
             // DGVDataTable
             // 
             this.DGVDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVDataTable.Location = new System.Drawing.Point(13, 209);
-            this.DGVDataTable.Margin = new System.Windows.Forms.Padding(4);
+            this.DGVDataTable.Location = new System.Drawing.Point(10, 170);
             this.DGVDataTable.Name = "DGVDataTable";
             this.DGVDataTable.RowHeadersWidth = 51;
-            this.DGVDataTable.Size = new System.Drawing.Size(1089, 468);
+            this.DGVDataTable.Size = new System.Drawing.Size(817, 380);
             this.DGVDataTable.TabIndex = 6;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 690);
+            this.ClientSize = new System.Drawing.Size(839, 561);
             this.Controls.Add(this.DGVDataTable);
             this.Controls.Add(this.btnIdEnter);
             this.Controls.Add(this.TBStudentID);
             this.Controls.Add(this.lblStudentID);
             this.Controls.Add(this.lblUniv);
             this.Controls.Add(this.pbLogo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
