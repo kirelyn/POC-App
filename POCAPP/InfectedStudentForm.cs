@@ -39,17 +39,19 @@ namespace POCAPP
 
         }
 
-        string myConnectionString = "server=localhost;database=pocapp;uid=;pwd=;";
+        string myConnectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
         private void button1_Click(object sender, EventArgs e)
         { 
             int id = Int32.Parse(xStudentIdText.Text);
 
-            string connectionString = "server=localhost;database=pocapp;uid=;pwd=;";
+            string connectionString = "server=localhost;database=pocapp;uid=Kennedy;pwd=Django100.;";
             MySqlConnection con2 = new MySqlConnection(connectionString);
+            MySqlConnection con3 = new MySqlConnection(connectionString);
             // carrying over connection from the first form to avoid having two different opens. -- Johnny
             try
             {
                 con2.Open();
+                con3.Open();
                 if(con.State != ConnectionState.Open)
                 {
                     con.Open();
@@ -74,15 +76,18 @@ namespace POCAPP
                         com2.Connection = con2;
                         com2.ExecuteNonQuery();
                         MessageBox.Show("Data added");
-                       // return true;
                     }
                     rdr.Close();
                 }
+                
+                
             }
             catch(Exception ex)
             {
                 MessageBox.Show("Connection Failed");
             }
+
+
 
             con.Close();
         }
