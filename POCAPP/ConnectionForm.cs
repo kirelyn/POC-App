@@ -25,12 +25,15 @@ namespace POCAPP
 
         
 
-        //This is how the windows forms will be connected to the database. The connection will have to be personalized.
+        //This is how the windows forms will be connected to the database. The connection will have to be personalized
+        string myConnectionString = "server=localhost;database=;uid=;pwd=;";
         public void button1_Click(object sender, EventArgs e)
         {
             
             //int id = 10;
+
             string connectionString = "server=localhost;database=;uid=;pwd=;";
+
             MySqlConnection con = new MySqlConnection(connectionString); 
 
             try
@@ -40,7 +43,6 @@ namespace POCAPP
                 this.Hide();
                 Form Form2 = new MainForm(con);
                 Form2.ShowDialog();
-                this.Close();
                 this.Close();
             }
             catch

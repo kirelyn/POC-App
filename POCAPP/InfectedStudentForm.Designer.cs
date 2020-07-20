@@ -79,27 +79,28 @@
             this.XFirstText.Location = new System.Drawing.Point(118, 69);
             this.XFirstText.Name = "XFirstText";
             this.XFirstText.Size = new System.Drawing.Size(100, 20);
-            this.XFirstText.TabIndex = 4;
+            this.XFirstText.TabIndex = 2;
             // 
             // xStudentIdText
             // 
             this.xStudentIdText.Location = new System.Drawing.Point(118, 37);
             this.xStudentIdText.Name = "xStudentIdText";
             this.xStudentIdText.Size = new System.Drawing.Size(100, 20);
-            this.xStudentIdText.TabIndex = 5;
+            this.xStudentIdText.TabIndex = 1;
             // 
             // XSubmitButton
             // 
             this.XSubmitButton.Location = new System.Drawing.Point(118, 146);
             this.XSubmitButton.Name = "XSubmitButton";
             this.XSubmitButton.Size = new System.Drawing.Size(75, 23);
-            this.XSubmitButton.TabIndex = 6;
+            this.XSubmitButton.TabIndex = 4;
             this.XSubmitButton.Text = "Submit";
             this.XSubmitButton.UseVisualStyleBackColor = true;
             this.XSubmitButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // XEnterId
             // 
+            this.AcceptButton = this.XSubmitButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 192);
@@ -112,6 +113,7 @@
             this.Controls.Add(this.XStudentIDLabel);
             this.Name = "XEnterId";
             this.Text = "Infected Student Information";
+            this.Load += new System.EventHandler(this.XEnterId_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,0 +1,2 @@
+ALTER TABLE professor
+ADD COLUMN priority INT UNSIGNED NOT NULL AFTER email
