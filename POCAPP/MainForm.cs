@@ -100,7 +100,7 @@ namespace POCAPP
                     }
                     rdr.Close();
                 }
-                displayTable(con);
+                displayTable(con, id);
             }
             catch
             {
@@ -108,7 +108,7 @@ namespace POCAPP
             }
             con2.Close();
         }
-        public void displayTable(MySqlConnection c)
+        public void displayTable(MySqlConnection c, int id)
         {
             string connectionString = "server=localhost;database=;uid=;pwd=;";
             MySqlConnection con3 = new MySqlConnection(connectionString);
@@ -119,7 +119,7 @@ namespace POCAPP
                 {
                     con.Open();
                 }
-                string sql = "SELECT * FROM mydatabase.student WHERE priority > 0;";
+                string sql = "SELECT * FROM mydatabase.student WHERE priority > 0 AND id != " + id.ToString() + ";";
                 MySqlCommand command = new MySqlCommand(sql, con);
                 using (MySqlDataReader rdr = command.ExecuteReader())
                 {
